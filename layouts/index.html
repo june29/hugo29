@@ -1,0 +1,17 @@
+{{ partial "header" . }}
+
+{{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+{{ range $paginator.Pages }}
+{{ partial "entry" . }}
+{{ end }}
+
+<p class="pagination clearfix">
+  {{ if .Paginator.HasPrev }}
+  <a href="{{ .Paginator.Prev.URL }}" class="newer">もっと新しいエントリへ</a>
+  {{ end }}
+  {{ if .Paginator.HasNext }}
+  <a href="{{ .Paginator.Next.URL }}" class="older">もっと古いエントリへ</a>
+  {{ end }}
+</p>
+
+{{ partial "footer" . }}

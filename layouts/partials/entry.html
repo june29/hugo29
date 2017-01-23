@@ -1,0 +1,30 @@
+<article>
+  <div class="article__head">
+    <h2>
+      <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+    </h2>
+    <p>
+      {{ .Date.Format "2006-01-02" }}
+    </p>
+  </div>
+  <div class="article__body">
+    {{ .Content }}
+  </div>
+  <div class="article__foot">
+    {{ if .Params.original_url }}
+    <div class="original-info">
+      <p>
+        この記事は、もともと下記に投稿されたものです。各種いいねやブックマークの数は下記 URL のものを表示しています。
+      </p>
+      <p>
+        <a href="{{ .Params.original_url }}">{{ .Params.original_url }}</a>
+      </p>
+    </div>
+    {{ end }}
+    {{ if .Params.original_url }}
+    {{ partial "widgets" .Params.original_url }}
+    {{ else }}
+    {{ partial "widgets" .Permalink }}
+    {{ end }}
+  </div>
+</article>

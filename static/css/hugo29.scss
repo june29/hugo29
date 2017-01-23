@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+$text-color: #343434;
+
+body {
+  word-break: break-all;
+  background-color: #fcfcfc;
+  font-family: "Helvetica","Arial","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif;
+  color: $text-color;
+}
+
+a {
+  color: #2196f3;
+
+  &.keyword {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+
+header, footer {
+  padding: 30px;
+  color: #ddd;
+}
+
+header {
+  margin-bottom: 60px;
+  border-bottom: 8px solid #fff;
+  text-align: center;
+  background-color: #ee6e73;
+
+  h1 {
+    margin-bottom: 20px;
+
+    a {
+      font-size: 200%;
+      text-decoration: none;
+      color: #fff;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  p {
+    margin-bottom: -80px;
+  }
+}
+
+footer {
+  background-color: #263238;
+
+  .footer__inner {
+    margin: 0 auto;
+
+    h2, ul, p {
+      margin: 0 0 20px;
+      line-height: 1.8em;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      color: #ddd;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.display-none {
+  display: none;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.pagination {
+  height: 1em;
+
+  a.newer {
+    float: left;
+  }
+
+  a.older {
+    float: right;
+  }
+}
+
+#main {
+  margin-bottom: 50px;
+
+  #main__inner {
+    margin: 30px auto;
+  }
+}
+
+.inner {
+  max-width: 100%;
+  width: 1000px;
+}
+
+ul, ol {
+  list-style-position: outside;
+
+  li {
+    margin-left: 20px;
+  }
+}
+
+.circle-icon {
+  border-radius: 50%;
+  border: 6px solid #fff;
+}
+
+article {
+  margin: 0 0 50px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+
+  .article__head, .article__foot {
+    @media screen and (min-width: 501px) {
+      padding: 50px;
+    }
+
+    @media screen and (max-width: 500px) {
+      padding: 30px;
+    }
+  }
+
+  .article__head {
+    border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+
+    h2 {
+      line-height: 1.8em;
+      margin-bottom: 10px;
+
+      a {
+        font-size: 150%;
+        text-decoration: none;
+        color: $text-color;
+      }
+    }
+  }
+
+  .article__body {
+    line-height: 1.8em;
+    padding: 30px 0;
+
+    h3 {
+      font-size: 140%;
+    }
+
+    h4 {
+      font-size: 120%;
+    }
+
+    h5 {
+      font-size: 110%;
+    }
+
+    p, h3, h4, h5, div, ul, ol, blockquote, pre, iframe, twitterwidget {
+      max-width: 100%;
+      margin: 0 5% 20px;
+
+      img {
+        margin: 0 -5.5% -5px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    ul, ol {
+      li {
+        margin-bottom: 4px;
+      }
+
+      ul, ol {
+        margin: 0;
+      }
+    }
+
+    blockquote, pre {
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.02);
+      border-radius: 4px;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    code {
+      padding: 0.2em 0.4em;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 2px;
+    }
+
+    img {
+      width: 111%;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+    }
+
+    @media screen and (max-width: 500px) {
+      iframe {
+        max-width: 100%;
+        margin: 0 0 20px;
+      }
+    }
+
+    .hatena-asin-detail {
+      position: relative;
+      margin: 0 0 20px;
+      background-color: rgba(0, 0, 0, 0.02);
+
+      @media screen and (min-width: 501px) {
+        padding: 44px;
+
+        > a {
+          position: absolute;
+          top: 44px;
+          left: 44px;
+
+          img.hatena-asin-detail-image {
+            width: auto;
+            margin: 0;
+          }
+        }
+
+        .hatena-asin-detail-info {
+          margin: 0 0 0 120px;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        padding: 20px;
+
+        > a {
+          display: block;
+          margin: 0 0 20px;
+          text-align: center;
+
+          img.hatena-asin-detail-image {
+            width: auto;
+            margin: 0;
+          }
+        }
+
+        .hatena-asin-detail-info {
+          margin: 0;
+
+          p, ul {
+            margin: 0;
+          }
+
+          p.hatena-asin-detail-title {
+            margin: 0 0 20px;
+          }
+        }
+      }
+
+      .hatena-asin-detail-info {
+        ul {
+          line-height: 1.8em;
+        }
+      }
+    }
+  }
+
+  .article__foot {
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+
+    .original-info {
+      line-height: 1.4em;
+      margin-bottom: 30px;
+      padding: 20px;
+      font-size: 90%;
+      background-color: #fffde7;
+    }
+
+    .hatena-star-container {
+      margin-bottom: 20px;
+    }
+  }
+}

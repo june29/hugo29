@@ -1,0 +1,37 @@
+      </div>
+    </div>
+    <footer>
+      <div class="footer__inner inner">
+        <h2>
+          最近の記事
+        </h2>
+        <ul>
+          {{ range first 20 (where .Site.Pages "Type" "post") }}
+          <li>
+            <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Date.Format "2006-01-02" }} : {{ .Title }}</a>
+          </li>
+          {{ end }}
+        </ul>
+        <h2>
+          書き手について
+        </h2>
+        <p>
+          大和田純。源氏名「june29」で活動中。北海道生まれ少年漫画育ち。渋谷区の大和田地方に勤めている。
+        </p>
+        <h2>
+          このサイトについて
+        </h2>
+        <p>
+          このサイトは大和田純によって運営されています。個人の見解や日常のことを書いています。ソースコードは
+          <a href="https://github.com/june29/june29.jp">GitHub</a>
+          にあります。
+        </p>
+      </div>
+    </footer>
+    {{ partial "facebook_script" }}
+    {{ partial "twitter_script" }}
+    {{ partial "hatena_bookmark_script" }}
+    {{ partial "hatena_star_script" }}
+    {{ partial "google_analytics_script" }}
+  </body>
+</html>

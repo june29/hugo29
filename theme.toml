@@ -1,0 +1,12 @@
+name = "Hugo29"
+license = "MIT"
+licenselink = "https://github.com/june29/hugo29/blob/master/LICENSE.md"
+description = "Hugo theme for june29"
+homepage = "https://github.com/june29/hugo29"
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.18
+
+[author]
+  name = "Jun OHWADA / @june29"
+  homepage = "http://june29.jp"
