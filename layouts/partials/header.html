@@ -5,25 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
     <link rel="alternate" type="application/atom+xml" title="Atom" href="/index.xml"/>
 
     <link rel="stylesheet" type="text/css" href="/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/css/hugo29.css">
 
-    {{ if eq .Site.Title .Title }}
-    <title>{{ .Site.Title }}</title>
-    {{ else }}
-    <title>{{ .Title }} - {{ .Site.Title }}</title>
-    {{ end }}
-
-    {{ if .Params.og_image }}
-    <meta property="og:image" content="{{ .Params.og_image | absURL }}" />
-    {{ else }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}img/og-image.png" />
-    {{ end }}
-    <meta name="description" content="{{ .Title }}">
-    <meta name="author" content="june29">
+    {{ partial "meta" . }}
   </head>
   <body>
     <header>

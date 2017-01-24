@@ -1,0 +1,40 @@
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+    <meta property="og:locale " content="{{ .Site.LanguageCode }}" />
+
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta name="twitter:url" content="{{ .Permalink }}" />
+    <link rel="canonical" href="{{ .Permalink }}" />
+
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+
+    <meta name="twitter:site" content="@{{ .Site.Params.TwitterUser }}" />
+    <meta name="twitter:creator" content="@{{ .Site.Params.TwitterUser }}" />
+
+{{ if .IsHome }}
+    <meta property="og:title" content="{{ .Site.Title }}" />
+    <meta name="twitter:title" content="{{ .Site.Title }}" />
+    <title>{{ .Site.Title }}</title>
+{{ else if .IsPage }}
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta name="twitter:title" content="{{ .Title }}" />
+    <title>{{ .Title }}</title>
+{{ if .Params.og_image }}
+    <meta name="twitter:image" content="{{ .Params.og_image | absURL }}" />
+    <meta property="og:image" content="{{ .Params.og_image | absURL }}" />
+{{ else }}
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}img/og-image.png" />
+    <meta property="og:image" content="{{ .Site.BaseURL }}img/og-image.png" />
+{{end}}
+{{ if eq .Type "post" }}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}" />
+    <meta property="og:article:section" content="{{ if .Section }}{{ .Section }}{{ else }}{{ .Type }}{{ end }}" />
+{{ else }}
+    <meta property="og:title" content="{{ .Site.Title }}" />
+    <meta name="twitter:title" content="{{ .Site.Title }}" />
+    <title>{{ .Site.Title }}</title>
+{{ end }}
+{{ end }}
