@@ -16,6 +16,8 @@
     <meta property="og:title" content="{{ .Site.Title }}" />
     <meta name="twitter:title" content="{{ .Site.Title }}" />
     <title>{{ .Site.Title }}</title>
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}img/og-image.png" />
+    <meta property="og:image" content="{{ .Site.BaseURL }}img/og-image.png" />
 {{ else if .IsPage }}
     <meta property="og:title" content="{{ .Title }}" />
     <meta name="twitter:title" content="{{ .Title }}" />
