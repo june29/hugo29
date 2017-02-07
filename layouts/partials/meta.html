@@ -21,7 +21,7 @@
 {{ else if .IsPage }}
     <meta property="og:title" content="{{ .Title }}" />
     <meta name="twitter:title" content="{{ .Title }}" />
-    <title>{{ .Title }}</title>
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
 {{ if .Params.og_image }}
     <meta name="twitter:image" content="{{ .Params.og_image | absURL }}" />
     <meta property="og:image" content="{{ .Params.og_image | absURL }}" />
