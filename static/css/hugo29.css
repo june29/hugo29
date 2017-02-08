@@ -184,5 +184,8 @@ article {
 
 #other-entries {
   line-height: 1.8em; }
+  @media screen and (max-width: 500px) {
+    #other-entries {
+      padding: 0 30px; } }
 
 /*# sourceMappingURL=hugo29.css.map */

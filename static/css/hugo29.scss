@@ -299,4 +299,8 @@ article {
 
 #other-entries {
   line-height: 1.8em;
+
+  @media screen and (max-width: 500px) {
+    padding: 0 30px;
+  }
 }
