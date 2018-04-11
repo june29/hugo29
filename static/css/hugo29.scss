@@ -169,7 +169,7 @@ article {
       font-size: 110%;
     }
 
-    p, h3, h4, h5, div, ul, ol, blockquote, pre, iframe, twitterwidget {
+    p, h3, h4, h5, div, ul, ol, blockquote, pre, iframe, table, twitterwidget {
       max-width: 100%;
       margin: 0 5% 20px;
 
@@ -212,6 +212,18 @@ article {
       width: 111%;
       border-top: 1px solid #eee;
       border-bottom: 1px solid #eee;
+    }
+
+    table {
+      tr {
+        &:nth-child(odd) {
+          background-color: #eee;
+        }
+
+        td {
+          padding: 2px 20px;
+        }
+      }
     }
 
     @media screen and (max-width: 500px) {
