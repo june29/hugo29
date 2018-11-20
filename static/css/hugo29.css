@@ -2,7 +2,7 @@
 body {
   word-break: break-all;
   background-color: #fcfcfc;
-  font-family: "Helvetica","Arial","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif;
+  font-family: "Helvetica", "Arial", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
   color: #343434;
 }
 
@@ -146,14 +146,14 @@ article .article__body h4 {
 article .article__body h5 {
   font-size: 110%;
 }
-article .article__body p, article .article__body h3, article .article__body h4, article .article__body h5, article .article__body div, article .article__body ul, article .article__body ol, article .article__body blockquote, article .article__body pre, article .article__body iframe, article .article__body table, article .article__body twitterwidget {
+article .article__body p, article .article__body h3, article .article__body h4, article .article__body h5, article .article__body div, article .article__body ul, article .article__body ol, article .article__body blockquote, article .article__body pre, article .article__body iframe, article .article__body table, article .article__body twitterwidget, article .article__body twitter-widget {
   max-width: 100%;
   margin: 0 5% 20px;
 }
-article .article__body p img, article .article__body h3 img, article .article__body h4 img, article .article__body h5 img, article .article__body div img, article .article__body ul img, article .article__body ol img, article .article__body blockquote img, article .article__body pre img, article .article__body iframe img, article .article__body table img, article .article__body twitterwidget img {
+article .article__body p img, article .article__body h3 img, article .article__body h4 img, article .article__body h5 img, article .article__body div img, article .article__body ul img, article .article__body ol img, article .article__body blockquote img, article .article__body pre img, article .article__body iframe img, article .article__body table img, article .article__body twitterwidget img, article .article__body twitter-widget img {
   margin: 0 -5.5% -5px;
 }
-article .article__body p:last-child, article .article__body h3:last-child, article .article__body h4:last-child, article .article__body h5:last-child, article .article__body div:last-child, article .article__body ul:last-child, article .article__body ol:last-child, article .article__body blockquote:last-child, article .article__body pre:last-child, article .article__body iframe:last-child, article .article__body table:last-child, article .article__body twitterwidget:last-child {
+article .article__body p:last-child, article .article__body h3:last-child, article .article__body h4:last-child, article .article__body h5:last-child, article .article__body div:last-child, article .article__body ul:last-child, article .article__body ol:last-child, article .article__body blockquote:last-child, article .article__body pre:last-child, article .article__body iframe:last-child, article .article__body table:last-child, article .article__body twitterwidget:last-child, article .article__body twitter-widget:last-child {
   margin-bottom: 0;
 }
 article .article__body ul li, article .article__body ol li {
@@ -265,3 +265,5 @@ article .article__foot .hatena-star-container {
     padding: 0 30px;
   }
 }
+
+/*# sourceMappingURL=hugo29.css.map */
