@@ -5,14 +5,14 @@
 <div id="other-entries">
   <h3>この記事の前後の記事や、いくつか適当に選ばれた記事たち</h3>
   <ul>
-  {{ if .Prev }}
+  {{ if .NextPage }}
     <li>
-      <a href="{{ .Prev.URL }}" title="{{ .Prev.Title }}">{{ .Prev.Date.Format "2006-01-02" }} : {{ .Prev.Title }}</a>
+      <a href="{{ .NextPage.URL }}" title="{{ .NextPage.Title }}">{{ .NextPage.Date.Format "2006-01-02" }} : {{ .NextPage.Title }}</a>
     </li>
   {{ end }}
-  {{ if .Next }}
+  {{ if .PrevPage }}
     <li>
-      <a href="{{ .Next.URL }}" title="{{ .Next.Title }}">{{ .Next.Date.Format "2006-01-02" }} : {{ .Next.Title }}</a>
+      <a href="{{ .PrevPage.URL }}" title="{{ .PrevPage.Title }}">{{ .PrevPage.Date.Format "2006-01-02" }} : {{ .PrevPage.Title }}</a>
     </li>
   {{ end }}
   </ul>
