@@ -108,13 +108,15 @@ article {
       font-size: 120%; }
     article .article__body h5 {
       font-size: 110%; }
-    article .article__body p, article .article__body h3, article .article__body h4, article .article__body h5, article .article__body div, article .article__body ul, article .article__body ol, article .article__body blockquote, article .article__body pre, article .article__body iframe, article .article__body table, article .article__body twitterwidget, article .article__body twitter-widget {
+    article .article__body p, article .article__body h3, article .article__body h4, article .article__body h5, article .article__body div, article .article__body ul, article .article__body ol, article .article__body blockquote, article .article__body pre, article .article__body iframe, article .article__body table {
       max-width: 100%;
-      margin: 0 5% 20px !important; }
-      article .article__body p img, article .article__body h3 img, article .article__body h4 img, article .article__body h5 img, article .article__body div img, article .article__body ul img, article .article__body ol img, article .article__body blockquote img, article .article__body pre img, article .article__body iframe img, article .article__body table img, article .article__body twitterwidget img, article .article__body twitter-widget img {
+      margin: 0 5% 20px; }
+      article .article__body p img, article .article__body h3 img, article .article__body h4 img, article .article__body h5 img, article .article__body div img, article .article__body ul img, article .article__body ol img, article .article__body blockquote img, article .article__body pre img, article .article__body iframe img, article .article__body table img {
         margin: 0 -5.5% -5px; }
-      article .article__body p:last-child, article .article__body h3:last-child, article .article__body h4:last-child, article .article__body h5:last-child, article .article__body div:last-child, article .article__body ul:last-child, article .article__body ol:last-child, article .article__body blockquote:last-child, article .article__body pre:last-child, article .article__body iframe:last-child, article .article__body table:last-child, article .article__body twitterwidget:last-child, article .article__body twitter-widget:last-child {
+      article .article__body p:last-child, article .article__body h3:last-child, article .article__body h4:last-child, article .article__body h5:last-child, article .article__body div:last-child, article .article__body ul:last-child, article .article__body ol:last-child, article .article__body blockquote:last-child, article .article__body pre:last-child, article .article__body iframe:last-child, article .article__body table:last-child {
         margin-bottom: 0; }
+    article .article__body twitterwidget, article .article__body twitter-widget {
+      margin: 0 5% 20px !important; }
     article .article__body ul li, article .article__body ol li {
       margin-bottom: 4px; }
     article .article__body ul ul, article .article__body ul ol, article .article__body ol ul, article .article__body ol ol {
