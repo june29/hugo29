@@ -2,7 +2,7 @@
 
 {{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
 {{ range $paginator.Pages }}
-{{ partial "entry" . }}
+{{ partial "entry_summary" . }}
 {{ end }}
 
 <p class="pagination clearfix">

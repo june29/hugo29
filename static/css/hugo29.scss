@@ -153,9 +153,8 @@ article {
     }
   }
 
-  .article__body {
+  .article__body, .article__body__summary {
     line-height: 1.8em;
-    padding: 30px 0;
 
     h3 {
       font-size: 140%;
@@ -294,6 +293,14 @@ article {
         }
       }
     }
+  }
+
+  .article__body {
+    padding: 30px 0;
+  }
+
+  .article__body__summary {
+    padding: 0 0 30px;
   }
 
   .article__foot {

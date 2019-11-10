@@ -1,0 +1,19 @@
+<article>
+  <div class="article__head">
+    <h2>
+      <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+    </h2>
+    <p>
+      {{ .Date.Format "2006-01-02" }}
+    </p>
+  </div>
+  {{ if .Params.og_image }}
+  <div class="article__body__summary">
+    <p>
+      <a href="{{ .Permalink }}" title="{{ .Title }}">
+        <img src="{{ .Params.og_image | absURL }}">
+      </a>
+    </p>
+  </div>
+  {{ end }}
+</article>
