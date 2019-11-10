@@ -6,7 +6,7 @@
           最近の記事
         </h2>
         <ul>
-          {{ range first 8 (where .Site.Pages "Type" "post") }}
+          {{ range first 8 (where .Site.RegularPages "Type" "post") }}
           <li>
             <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Date.Format "2006-01-02" }} : {{ .Title }}</a>
           </li>
