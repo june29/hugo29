@@ -198,6 +198,8 @@ article {
       background-color: #0d97ff;
       color: #fff; }
     @media screen and (max-width: 500px) {
+      article .article__foot h4 {
+        text-align: center; }
       article .article__foot .kyash-me-pc {
         display: none; } }
     @media screen and (min-width: 501px) {
@@ -207,6 +209,7 @@ article {
       width: 100%;
       padding: 10px;
       line-height: 1.6em;
+      box-sizing: border-box;
       background-color: #fafafa; }
     article .article__foot .original-info {
       line-height: 1.4em;

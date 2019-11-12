@@ -332,6 +332,10 @@ article {
     }
 
     @media screen and (max-width: 500px) {
+      h4 {
+        text-align: center;
+      }
+
       .kyash-me-pc {
         display: none;
       }
@@ -347,6 +351,7 @@ article {
       width: 100%;
       padding: 10px;
       line-height: 1.6em;
+      box-sizing: border-box;
       background-color: #fafafa;
     }
 
