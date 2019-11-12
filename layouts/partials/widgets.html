@@ -4,8 +4,15 @@
     <a href="{{ . }}" class="original-url">{{ . }}</a>
   </p>
 </p>
-<p class="social-widgets">
-  <div class="fb-like" data-href="{{ . }}" data-layout="box_count" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
-  <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-url="{{ . }}" data-related="june29" data-show-count="true">Tweet</a>
-  <a href="{{ replace . "http://" "http://b.hatena.ne.jp/entry/" }}" class="hatena-bookmark-button" data-hatena-bookmark-title="{{ . }}" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+<hr>
+<p class="kyash-me-pc">
+  <img src="/img/kyash-qr.png" width="100" height="100">
+  <span>Kyash で送金して筆者を応援できます</span>
 </p>
+<p class="kyash-me-mobile">
+  <a href="kyash://request/u/8267cf4a-cd63-4cc7-9e3f-2730e5788501">筆者に Kyash で 99 円を送金する</a>
+</p>
+<hr>
+<h4>シェアするぞ、って人はこちらをどうぞ</h4>
+<textarea>{{ .Title }} - {{ .Site.Title }}
+{{ .Permalink }}</textarea>

@@ -182,8 +182,32 @@ article {
     padding: 0 0 30px; }
   article .article__foot {
     border-top: 1px solid rgba(160, 160, 160, 0.2); }
-    article .article__foot h4 {
+    article .article__foot h4, article .article__foot p {
       margin-bottom: 20px; }
+    article .article__foot .kyash-me-pc span {
+      display: inline-block;
+      line-height: 100px;
+      vertical-align: top; }
+    article .article__foot .kyash-me-mobile a {
+      display: block;
+      padding: 16px 12px;
+      border-radius: 40px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      background-color: #0d97ff;
+      color: #fff; }
+    @media screen and (max-width: 500px) {
+      article .article__foot .kyash-me-pc {
+        display: none; } }
+    @media screen and (min-width: 501px) {
+      article .article__foot .kyash-me-mobile {
+        display: none; } }
+    article .article__foot textarea {
+      width: 100%;
+      padding: 10px;
+      line-height: 1.6em;
+      background-color: #fafafa; }
     article .article__foot .original-info {
       line-height: 1.4em;
       margin-bottom: 30px;
