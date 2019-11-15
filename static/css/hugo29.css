@@ -182,10 +182,10 @@ article {
     padding: 0 0 30px; }
   article .article__foot {
     border-top: 1px solid rgba(160, 160, 160, 0.2); }
-    article .article__foot h4 {
-      margin-bottom: 20px; }
-      article .article__foot h4 * {
-        vertical-align: bottom; }
+    article .article__foot .hatena-star-container * {
+      vertical-align: middle; }
+    article .article__foot .hatena-star-container a {
+      text-decoration: none; }
     article .article__foot .kyash-me-pc span {
       display: inline-block;
       line-height: 100px;

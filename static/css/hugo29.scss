@@ -306,11 +306,13 @@ article {
   .article__foot {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
 
-    h4 {
-      margin-bottom: 20px;
-
+    .hatena-star-container {
       * {
-        vertical-align: bottom;
+        vertical-align: middle;
+      }
+
+      a {
+        text-decoration: none;
       }
     }
 
