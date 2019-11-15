@@ -306,8 +306,12 @@ article {
   .article__foot {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
 
-    h4, p {
+    h4 {
       margin-bottom: 20px;
+
+      * {
+        vertical-align: bottom;
+      }
     }
 
     .kyash-me-pc {
@@ -345,14 +349,6 @@ article {
       .kyash-me-mobile {
         display: none;
       }
-    }
-
-    textarea {
-      width: 100%;
-      padding: 10px;
-      line-height: 1.6em;
-      box-sizing: border-box;
-      background-color: #fafafa;
     }
 
     .original-info {

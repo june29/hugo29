@@ -1,10 +1,14 @@
-<h4>おもしろかったら、いいジャン！してね</h4>
+<h4>
+  おもしろかったら、いいジャン！してね
+  <a href="{{ replace .Permalink "https://" "https://b.hatena.ne.jp/entry/s/" }}">
+    <img src="https://b.hatena.ne.jp/entry/image/{{ .Permalink }}">
+  </a>
+</h4>
 <p class="hatena-star-container">
   <p class="display-none">
     <a href="{{ .Permalink }}" class="original-url">{{ .Permalink }}</a>
   </p>
 </p>
-<hr>
 <p class="kyash-me-pc">
   <img src="/img/kyash-qr.png" width="100" height="100">
   <span>Kyash で送金して筆者を応援できます</span>
@@ -12,7 +16,3 @@
 <p class="kyash-me-mobile">
   <a href="kyash://request/u/8267cf4a-cd63-4cc7-9e3f-2730e5788501">筆者に Kyash で 99 円を送金する</a>
 </p>
-<hr>
-<h4>シェアするぞ、って人はこちらをどうぞ</h4>
-<textarea>{{ .Title }} - {{ .Site.Title }}
-{{ .Permalink }}</textarea>

@@ -16,8 +16,4 @@ $(function() {
       });
     });
   }
-
-  $("textarea").on("focus", function() {
-    $(this).select();
-  });
 });
