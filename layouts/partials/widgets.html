@@ -1,3 +1,9 @@
+<h4 class="for-pc">
+  おもしろかったら、シェアやブックマークや送金などぜひぜひお願いします。サイト運営の励みになります！
+</h4>
+<h4 class="for-mobile">
+  シェアや送金などお待ちしています！
+</h4>
 <p class="hatena-star-container">
   <a href="{{ replace .Permalink "https://" "https://b.hatena.ne.jp/entry/s/" }}">
     <img src="https://b.hatena.ne.jp/entry/image/{{ .Permalink }}">
@@ -6,3 +12,4 @@
     <a href="{{ .Permalink }}" class="original-url">{{ .Permalink }}</a>
   </p>
 </p>
+{{ partial "kyash-me" }}
