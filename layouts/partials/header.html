@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="alternate" type="application/atom+xml" title="Atom" href="/index.xml"/>
-
+    {{ $style := resources.Get "hugo29.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" type="text/css" href="/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/css/hugo29.css?t={{ now.Unix }}">
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
 
     <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="/js/underscore-min.js"></script>
