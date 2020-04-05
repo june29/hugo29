@@ -216,13 +216,32 @@ article {
     }
 
     table {
-      tr {
-        &:nth-child(odd) {
-          background-color: #eee;
+      thead, tbody {
+        tr {
+          th, td {
+            padding: 4px 20px;
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            vertical-align: middle;
+          }
         }
+      }
 
-        td {
-          padding: 2px 20px;
+      thead {
+        tr {
+          background-color: #f3f3f3;
+        }
+      }
+
+      tbody {
+        tr {
+          &:nth-child(even) {
+            background-color: #f3f3f3;
+          }
+
+          &:nth-child(odd) {
+            background-color: #fcfcfc;
+          }
         }
       }
     }
